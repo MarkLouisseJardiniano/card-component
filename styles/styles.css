@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca:wght@100;400&family=Lora:wght@400;500;600;700&family=Overpass:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-color:  hsl(233, 47%, 7%);
+    font-family: Inter;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    height: 446px;
+    width: 1080px;
+    border-radius: 6px;
+    background-color: hsl(244, 38%, 16%);
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.content h1{
+    font-weight: 700;
+    color: #fff;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+.contents{
+    width: 350px;
+    padding: 50px 100px 0 60px;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    border-radius: 0 6px 6px 0;
+    display:block;
+}
+.overlay{
+    position: absolute;
+    background-color: hsl(277, 64%, 61%);
+    width: 100%;
+    height:100%;
+    top: 0;
+    left:0;
+    content:"";
+    opacity: 40%;
+}
+.text{
+    font-size: 15px;
+}
+.p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+}
+.profile-stats{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.profile-stats{
+    margin-top: 50px;
+}
+.stats-head{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: -2px;
+}
+.stats-p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 9px;
+}
+@media (min-width: 376px) and (max-width: 576px){
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        width: 190px;
+    }
+.attribution a { color: hsl(228, 45%, 44%); }
+    .container{
+        width: 330px;
+        height: 900px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contents p{
+        width: 270px;
+        line-height: 26px;
+        margin-left: 15px;
+    }
+    .contents h1{
+        font-size: 29px;
+    }
+    .contents{
+        order: 2;
+        width: 300px;
+        text-align: center;
+        margin:20px 15px 0 15px;
+        padding: 0;
+    }
+    .banner{
+        order: 1;
+    }
+    .banner img{
+        width: 100%;
+        height: auto;
+    }
+    .profile-stats{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 4px;
+    }
+    .stats-head{
+        font-size: 25px;
+    }
+}
